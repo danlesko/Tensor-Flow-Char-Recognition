@@ -1,6 +1,6 @@
 # Import MNIST data
 import input_data
-mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
+mnist = input_data.read_data_sets("./tmp/data/", one_hot=True)
 
 import tensorflow as tf
 
@@ -23,7 +23,7 @@ b = tf.Variable(tf.zeros([10]))
 with tf.name_scope("Wx_b") as scope:
     # Construct a linear model
     model = tf.nn.softmax(tf.matmul(x, W) + b) # Softmax
-    
+
 # Add summary ops to collect data
 w_h = tf.histogram_summary("weights", W)
 b_h = tf.histogram_summary("biases", b)
@@ -50,8 +50,8 @@ merged_summary_op = tf.merge_all_summaries()
 with tf.Session() as sess:
     sess.run(init)
 
-    
-    
+
+
     # Change this to a location on your computer
     summary_writer = tf.train.SummaryWriter('/home/landesko/Code/Tensor-Flow-Char-Recognition/', graph_def=sess.graph_def)
 
