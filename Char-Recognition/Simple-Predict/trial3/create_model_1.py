@@ -28,7 +28,7 @@ import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
 #import data
-mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
+mnist = input_data.read_data_sets("/home/landesko/Code/Tensor-Flow-Char-Recognition/Char-Recognition/convertedNotMNIST", one_hot=True)
 
 # Create the model
 x = tf.placeholder(tf.float32, [None, 784])

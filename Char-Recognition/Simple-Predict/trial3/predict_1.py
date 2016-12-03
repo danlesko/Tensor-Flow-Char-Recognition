@@ -105,7 +105,27 @@ def main(argv):
     """
     imvalue = imageprepare(argv)
     predint = predictint(imvalue)
-    print (predint[0]) #first value in list
+    
+    if (int(predint[0]) == 0):
+        print ("A")
+    elif (int(predint[0]) == 1):
+        print ("B")
+    elif (int(predint[0]) == 2):
+        print ("C")
+    elif (int(predint[0]) == 3):
+        print ("D")
+    elif (int(predint[0]) == 4):
+        print ("E")
+    elif (int(predint[0]) == 5):
+        print ("F")
+    elif (int(predint[0]) == 6):
+        print ("G")
+    elif (int(predint[0]) == 7):
+        print ("H")
+    elif (int(predint[0]) == 8):
+        print ("I")
+    elif (int(predint[0]) == 9):
+        print ("J")
     
 if __name__ == "__main__":
     main(sys.argv[1])
