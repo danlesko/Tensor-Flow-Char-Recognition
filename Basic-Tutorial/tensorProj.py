@@ -54,8 +54,6 @@ merged_summary_op = tf.merge_all_summaries()
 with tf.Session() as sess:
     sess.run(init)
 
-
-
     # Change this to a location on your computer
     summary_writer = tf.train.SummaryWriter('/home/landesko/Code/Tensor-Flow-Char-Recognition/Basic-Tutorial/dataSummary/', graph_def=sess.graph_def)
 
