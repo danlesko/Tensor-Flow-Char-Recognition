@@ -1,10 +1,10 @@
 # Import MNIST data
 import input_data
-<<<<<<< HEAD:tensorProj.py
-mnist = input_data.read_data_sets("./tmp/data/", one_hot=True)
-=======
+# <<<<<<< HEAD:tensorProj.py
+# mnist = input_data.read_data_sets("./tmp/data/", one_hot=True)
+# =======
 mnist = input_data.read_data_sets("/home/landesko/Code/Tensor-Flow-Char-Recognition/Char-Recognition/notMNIST", one_hot=True)
->>>>>>> 2d99e827f5c26d91cd2c849097aaee482a6abb4e:Basic-Tutorial/tensorProj.py
+# >>>>>>> 2d99e827f5c26d91cd2c849097aaee482a6abb4e:Basic-Tutorial/tensorProj.py
 
 import tensorflow as tf
 
@@ -76,6 +76,9 @@ with tf.Session() as sess:
             print ("Iteration:", '%04d' % (iteration + 1), "cost=", "{:.9f}".format(avg_cost))
 
     print ("Tuning completed!")
+
+    save_path = saver.save(sess, "model.ckpt")
+    print ("Model saved in file: ", save_path)
 
     # Test the model
     predictions = tf.equal(tf.argmax(model, 1), tf.argmax(y, 1))
