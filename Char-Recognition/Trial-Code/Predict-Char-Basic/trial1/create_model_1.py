@@ -25,7 +25,7 @@ https://www.tensorflow.org/versions/master/tutorials/mnist/beginners/index.html
 
 #import modules
 import tensorflow as tf
-import input_data
+from tensorflow.examples.tutorials.mnist import input_data
 
 #import data
 mnist = input_data.read_data_sets("/home/landesko/Code/Tensor-Flow-Char-Recognition/Char-Recognition/convertedNotMNIST", one_hot=True)
@@ -57,7 +57,7 @@ https://www.tensorflow.org/versions/master/how_tos/variables/index.html
 """
 with tf.Session() as sess:
     sess.run(init_op)
-    for i in range(1000):
+    for i in range(5000):
         batch_xs, batch_ys = mnist.train.next_batch(100)
         sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})
         
