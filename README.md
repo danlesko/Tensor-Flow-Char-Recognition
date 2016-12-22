@@ -15,4 +15,4 @@ Then test the code by typing:
 python3 predict.py <Path-To-PNG>
 ```
 ### Disclaimer
-All code that was used on this repo is borrowed code from someone else. Only slight modifications have been made to existing code in terms of tweaking learning rates, optimizers, or making slight modifications to run the notMNIST data. 
+All code that was used on this repo is borrowed code from someone else. Only slight modifications have been made to existing code in terms of tweaking learning rates, classifiers, optimizers, or making slight modifications to run the notMNIST data. 
