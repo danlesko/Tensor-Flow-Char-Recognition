@@ -5,12 +5,12 @@ This project aimed to teach our group about the basic working's of Google's Tens
 Setting up a development to run the code requires one in which TensorFlow is installed. Recommendations on how to do this are located [here](https://www.tensorflow.org/get_started/os_setup) on the TensorFlow website. I, however, chose to follow this [tutorial](http://www.heatonresearch.com/2016/09/10/ubuntu-tensorflow.html) which involves spinning up an Ubuntu VM and installing Anaconda for Python which allows us to create a virtual environment for running Tensorflow. Once you get to the step where you are to download TensorFlow, please change your URL to the latest version listed on the website. Afterwards you can stop the tutorial and clone our code.
 
 ### Running
-Running the code is easy. First you must select which classifier you want to use (Basic Softmax, Convulutional Neural Network, Multilayer Perceptron). Navigate to that directory by going into Char-Recognition/Predict-Char-\<Classifier\>. Now you can create the model. First navigate to the create_model.py file and change the filepath to where the data resides on your computer. Run the code by typing
+Running the code is easy. First you must select which classifier you want to use (Basic Softmax, Convulutional Neural Network, Multilayer Perceptron). Navigate to that directory by going into Char-Recognition/Predict-Char-\<Classifier\>. Now you can create the model. First navigate to the create_model.py file and change the filepath to where the data resides on your computer. Run the code by typing at the command line:
 ```
 python3 create_model.py
 ```
 
-Then test the code by running:
+Then test the code by typing:
 ```
 python3 predict.py <Path-To-PNG>
 ```
