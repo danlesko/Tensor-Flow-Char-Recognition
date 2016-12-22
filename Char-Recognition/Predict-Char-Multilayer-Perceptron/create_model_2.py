@@ -14,7 +14,7 @@ mnist = input_data.read_data_sets("../convertedNotMNIST/", one_hot=True)
 import tensorflow as tf
 
 # Parameters
-learning_rate = 0.001
+learning_rate = 0.0001
 training_epochs = 15
 batch_size = 100
 display_step = 1
